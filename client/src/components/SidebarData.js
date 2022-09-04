@@ -12,13 +12,13 @@ export const SidebarData = [
     },
     {
         title: 'Search',
-        path: '/search',
+        path: '/Search',
         icon: <AiIcons.AiOutlineSearch />,
         cName: 'nav-text'
     },
     {
         title: 'About',
-        path: '/about',
+        path: '/About',
         icon: <FcIcons.FcAbout />,
         cName: 'nav-text'
     },
