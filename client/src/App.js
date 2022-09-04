@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Search from './pages/Search';
 import './App.css';
-import Player from './components/player';
+import Player from './components/Player';
 
 function App() {
   return (
