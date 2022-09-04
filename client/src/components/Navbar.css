@@ -8,14 +8,14 @@ body{
     width: 15%;
     display:  flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     position : fixed;
 }
 .nav-text{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     list-style: none;
     height: 30px;
 }
@@ -30,11 +30,12 @@ body{
     border-radius: 4px;
 }
 .nav-text a:hover{
-    background-color: rosybrown;
+    color: rosybrown;
 }
 .nav-menu-items{
     width: 100%;
     padding-inline-start: 0px;
+    margin-top: 15%;
     display: flex;
     flex-direction: column;
 }

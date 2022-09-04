@@ -1,0 +1,9 @@
+
+.player-container{
+    background-color: aqua;
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    bottom: 0;
+}
