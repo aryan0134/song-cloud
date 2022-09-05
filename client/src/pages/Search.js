@@ -62,7 +62,7 @@ const renderArtists = () => {
       <div className="search-container">
         {!token ?
                       <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}  >Login
-                          to Spotify</a>
+                          to Song Cloud</a>
                       : <button onClick={logout} className="logout-btn">Logout</button>}
 
                   {token ?

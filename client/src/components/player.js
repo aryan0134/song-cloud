@@ -24,8 +24,8 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
       
         const skipBack = ()=>
         {
-          const index = songs.findIndex(x=>x.title == currentSong.title);
-          if (index == 0)
+          const index = songs.findIndex(x=>x.title === currentSong.title);
+          if (index === 0)
           {
             setCurrentSong(songs[songs.length - 1])
           }
@@ -40,9 +40,9 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
       
         const skiptoNext = ()=>
         {
-          const index = songs.findIndex(x=>x.title == currentSong.title);
+          const index = songs.findIndex(x=>x.title === currentSong.title);
       
-          if (index == songs.length-1)
+          if (index === songs.length-1)
           {
             setCurrentSong(songs[0])
           }
@@ -58,7 +58,7 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
         <div className='Player-container'>
             <div className='flex-1'>
                 <div className='PlayerArtist'></div>
-                <div className='PlayerName'><h1>{currentSong.title}</h1></div>
+                <div className='PlayerName'><h1>{currentSong.title}</h1><h1>{currentSong.artist}</h1></div>
             </div>
             <div className='flex-2'>
                 <div className='PlayerButton'>
