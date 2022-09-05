@@ -16,7 +16,7 @@ function Home() {
                   {Homeblock.map((item) => {
                     return(
                       <div key={uuid()} className={item.cName}>
-                        <img key={uuid()} src='${item.image}' />
+                        <img key={uuid()} src={item.image} />
                       </div>
                     )
                   })}
