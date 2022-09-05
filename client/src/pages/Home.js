@@ -11,12 +11,18 @@ function Home() {
           Homecontainer.map((item,index) => {
             return(
               <div key={uuid()} className={item.cName}>
-                <div key={uuid()} className={item.cName2}></div>
+                <div key={uuid()} className={item.cName2}>
+                  <h1 className='hometitle'>
+                    {
+                      item.title
+                    }
+                  </h1>
+                </div>
                 <div key={uuid()} className={item.cName3}>
                   {Homeblock.map((item) => {
                     return(
                       <div key={uuid()} className={item.cName}>
-                        <img key={uuid()} src='${item.image}' />
+                        <img key={uuid()} src={item.image} />
                       </div>
                     )
                   })}
