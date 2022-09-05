@@ -9,4 +9,6 @@
     width: 85vw;
     border: 5px solid red;
     margin-left: 15%;
+    display: flex;
+    flex-direction: column;
 }

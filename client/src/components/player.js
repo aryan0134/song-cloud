@@ -1,32 +1,80 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Player.css';
-import * as FaIcons from 'react-icons/fa';
+import * as BsIcons from 'react-icons/bs';
 
-function Player(){
+function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong, songs}){
+        const clickRef = useRef();
+      
+        const PlayPause = ()=>
+        {
+          setisplaying(!isplaying);
+      
+        }
+      
+      
+        const checkWidth = (e)=>
+        {
+          let width = clickRef.current.clientWidth;
+          const offset = e.nativeEvent.offsetX;
+      
+          const divprogress = offset / width * 100;
+          audioElem.current.currentTime = divprogress / 100 * currentSong.length;
+      
+        }
+      
+        const skipBack = ()=>
+        {
+          const index = songs.findIndex(x=>x.title == currentSong.title);
+          if (index == 0)
+          {
+            setCurrentSong(songs[songs.length - 1])
+          }
+          else
+          {
+            setCurrentSong(songs[index - 1])
+          }
+          audioElem.current.currentTime = 0;
+          
+        }
+      
+      
+        const skiptoNext = ()=>
+        {
+          const index = songs.findIndex(x=>x.title == currentSong.title);
+      
+          if (index == songs.length-1)
+          {
+            setCurrentSong(songs[0])
+          }
+          else
+          {
+            setCurrentSong(songs[index + 1])
+          }
+          audioElem.current.currentTime = 0;
+          
+        }
   return (
     <>
         <div className='Player-container'>
-            <div className='PlayerArtist'>
-
+            <div className='flex-1'>
+                <div className='PlayerArtist'></div>
+                <div className='PlayerName'><h1>{currentSong.title}</h1></div>
             </div>
-            <div className='PlayerButton'>
-                <div className='Previous'></div>
-                <div className='Play'>
+            <div className='flex-2'>
+                <div className='PlayerButton'>
+                    <BsIcons.BsFillSkipStartCircleFill className='btn_action' onClick={skipBack} />
+                    {isplaying ? <BsIcons.BsFillPauseCircleFill className='btn_action pp' onClick={PlayPause}/> : <BsIcons.BsFillPlayCircleFill className='btn_action pp' onClick={PlayPause}/>}
+                    <BsIcons.BsFillSkipEndCircleFill className='btn_action' onClick={skiptoNext} />
                 </div>
-                <div className='Next'></div>
-            </div>
-            <div className='PlayerBar'>
-                <div className='Barwrapper'>
-                    <div className='Seekbar'></div>
-                </div>
+                <div className='PlayerBar'>
+                    <div className='Barwrapper' onClick={checkWidth} ref={clickRef}>
+                        <div className='Seekbar' style={{width: `${currentSong.progress+"%"}`}}></div>
+                    </div>
 
+                </div>
             </div>
         </div>
     </>
   )
 }
-<<<<<<< HEAD
 export default Player;
-=======
-export default Player; 
->>>>>>> bd2ed76791825f0315ca5c32ffaebe5d68da7be6
