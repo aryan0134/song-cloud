@@ -1,0 +1,162 @@
+.home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
+.description{
+    width: 90%;
+    height: 40%;
+    border: 5px solid yellow;
+    margin-left: 5%;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+
+    
+    
+}
+.container-name{
+    width: 100%;
+    height:25%;
+    border: 5px solid greenyellow;
+}
+/* .container2{
+    width: 80%;
+    height: 25%;
+    border: 5px solid yellow;
+    position: absolute;
+    left: 17.5%;
+    right: 0%;
+    top: 32%;
+}
+.container3{
+    width: 80%;
+    height: 25%;
+    border: 5px solid yellow;
+    position: absolute;
+    left: 17.5%;
+    right: 0%;
+    top: 60%;
+} */
+.block1{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 2%;
+    top: 10%;
+}
+.block2{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 22%;
+    top: 10%;
+}
+.block3{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 42%;
+    top: 10%;
+}
+.block4{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 62.5%;
+    top: 10%;
+}
+.block5{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 82%;
+    top: 10%;
+} 
+.block6{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 2%;
+    top: 10.5%;
+}
+.block7{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 22%;
+    top: 10.5%;
+}
+.block8{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 42%;
+    top: 10.5%;
+}
+.block9{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 62.5%;
+    top: 10.5%;
+}
+.block10{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 82%;
+    top: 10.5%;
+}
+.block11{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 2%;
+    top: 10.5%;
+}
+.block12{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 22%;
+    top: 10.5%;
+}
+.block13{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 42%;
+    top: 10.5%;
+}
+.block14{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 62.5%;
+    top: 10.5%;
+}
+.block15{
+    width: 15%;
+    height: 80%;
+    border: 5px solid white;
+    position: absolute;
+    left: 82%;
+    top: 10.5%;
+}     

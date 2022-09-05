@@ -6,6 +6,7 @@ import About from './pages/About';
 import Search from './pages/Search';
 import './App.css';
 import Player from './components/Player';
+import { songsdata} from './components/Audio';
 
 function App() {
   const [songs, setSongs] = useState(songsdata);

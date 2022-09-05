@@ -1,0 +1,93 @@
+.about-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:  #CCCCFF;
+}
+.aboutlogo{
+    width: 25%;
+    height: 13%;
+    position: absolute;
+    left: 45%;
+    margin: auto;
+    top: 3%;
+    font-size: xx-large;
+    background-color: #9370DB;
+}
+.title{
+    color: beige;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+.aboutpara{
+    width: 80%;
+    height: 30%;
+    border: 5px solid blue;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+}
+.para{
+    font-style: italic;
+    font-size: large;
+
+}
+.developer1{
+    position: absolute;
+    width: 80%;
+    height: 32%;
+    top: 55%;
+    left: 17%;
+    border: 5px solid yellow;
+}
+.image1{
+    position: absolute;
+    width: 15%;
+    height: 80%;
+    border: 5px solid yellow;
+    left: 5%;
+    top: 10%;
+    background-image: url("pic3.JPG");
+    background-size: cover;
+
+}
+.image2{
+    position: absolute;
+    width: 15%;
+    height: 80%;
+    border: 5px solid blue;
+    left: 30%;
+    top: 10%;
+    background-image: url("pic1.jpeg");
+    background-size: cover;
+    background-position-x: 40%;
+    background-position-y: 20%;
+
+}
+.image3{
+    position: absolute;
+    width: 15%;
+    height: 80%;
+    border: 5px solid green;
+    left: 55%;
+    top: 10%;
+    background-image: url("pic2.png");
+    background-size: cover;
+    background-position-x: 30%;
+
+}
+.image4{
+    position: absolute;
+    width: 15%;
+    height: 80%;
+    border: 5px solid palevioletred;
+    left: 80%;
+    top: 10%;
+
+}
+
+
+
+
