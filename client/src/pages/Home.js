@@ -5,6 +5,7 @@ import './Home.css';
 import uuid from 'react-uuid';
 
 function Home() {
+
   return (
     <>
         {
@@ -19,9 +20,9 @@ function Home() {
                   </h1>
                 </div>
                 <div key={uuid()} className={item.cName3}>
-                  {Homeblock.map((item) => {
+                  {Homeblock.map((item, index) => {
                     return(
-                      <div key={uuid()} className={item.cName}>
+                      <div key={index} className={item.cName} >
                         <img key={uuid()} src={item.image} />
                       </div>
                     )

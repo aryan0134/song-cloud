@@ -15,6 +15,10 @@
         top: 8px;
         left: 15px;   
 }
+.PlayerArtist img{
+    height: 100%;
+    width: 100%;
+}
 .PlayerName{
     width: 60%;
     height: 75%;
