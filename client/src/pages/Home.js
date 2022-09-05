@@ -1,6 +1,8 @@
 import React from 'react'
 import { Homecontainer } from '../components/Homecontainer';
+import { Homeblock } from '../components/Homeblock';
 import './Home.css';
+import uuid from 'react-uuid';
 
 function Home() {
   return (
@@ -8,8 +10,17 @@ function Home() {
         {
           Homecontainer.map((item,index) => {
             return(
-              <div key={index} className={item.cName}>
-                <div key={index} className={item.cName2}></div>
+              <div key={uuid()} className={item.cName}>
+                <div key={uuid()} className={item.cName2}></div>
+                <div key={uuid()} className={item.cName3}>
+                  {Homeblock.map((item) => {
+                    return(
+                      <div key={uuid()} className={item.cName}>
+                        <img key={uuid()} src='${item.image}' />
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
             )
           }) 

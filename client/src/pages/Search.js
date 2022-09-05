@@ -11,7 +11,6 @@ function Search() {
   const [token, setToken] = useState("")
   const [searchKey, setSearchKey] = useState("")
   const [artists, setArtists] = useState([])
-  const [tracks, setTracks] = useState([])
 
   useEffect(() => {
     const hash = window.location.hash
