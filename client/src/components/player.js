@@ -57,7 +57,9 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
     <>
         <div className='Player-container'>
             <div className='flex-1'>
-                <div className='PlayerArtist'></div>
+                <div className='PlayerArtist'>
+                  <img src={currentSong.image} />
+                </div>
                 <div className='PlayerName'><h1>{currentSong.title}</h1><h1>{currentSong.artist}</h1></div>
             </div>
             <div className='flex-2'>

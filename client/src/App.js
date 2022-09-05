@@ -6,12 +6,12 @@ import About from './pages/About';
 import Search from './pages/Search';
 import './App.css';
 import Player from './components/Player';
-import { songsdata } from './components/Audio';
+import { Homeblock } from './components/Homeblock';
 
 function App() {
-  const [songs, setSongs] = useState(songsdata);
+  const [songs, setSongs] = useState(Homeblock);
   const [isplaying, setisplaying] = useState(false);
-  const [currentSong, setCurrentSong] = useState(songsdata[1]);
+  const [currentSong, setCurrentSong] = useState(Homeblock[1]);
 
   const audioElem = useRef();
 
@@ -36,9 +36,9 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <audio src={currentSong.url} ref={audioElem} onTimeUpdate={onPlaying} />
+        <audio src={currentSong.track} ref={audioElem} onTimeUpdate={onPlaying} />
         <Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} currentSong={currentSong} setCurrentSong={setCurrentSong} />
-        <div className="container">
+        <div className="container homeslide">
           <Routes>
             <Route path='/' exact element={ <Home /> } />
             <Route path='/About' element={ <About /> } />
