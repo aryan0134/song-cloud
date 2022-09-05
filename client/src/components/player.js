@@ -25,8 +25,4 @@ function Player(){
     </>
   )
 }
-<<<<<<< HEAD
 export default Player;
-=======
-export default Player; 
->>>>>>> bd2ed76791825f0315ca5c32ffaebe5d68da7be6
