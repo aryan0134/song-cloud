@@ -23,6 +23,11 @@
     top: 8px;
     left: 40%;
 }
+.PlayerName h1{
+    font-size: 1.2vw;
+    text-align: center;
+    font-family:  'Sora', sans-serif;
+}
 .PlayerButton{
     font-size: inherit;
     display: flex;
