@@ -6,13 +6,13 @@ import About from './pages/About';
 import Search from './pages/Search';
 import './App.css';
 import Player from './components/Player';
-import { Homeblock } from './components/Homeblock';
+import { songsdata } from './components/Audio';
 
 function App() {
-  const [songs, setSongs] = useState(Homeblock);
+  const [songs, setSongs] = useState(songsdata);
   const [isplaying, setisplaying] = useState(false);
-  const [currentSong, setCurrentSong] = useState(Homeblock[1]);
-
+  const [currentSong, setCurrentSong] = useState(songsdata[0]);
+  
   const audioElem = useRef();
 
   useEffect(() => {
@@ -38,9 +38,9 @@ function App() {
         <Navbar />
         <audio src={currentSong.track} ref={audioElem} onTimeUpdate={onPlaying} />
         <Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} currentSong={currentSong} setCurrentSong={setCurrentSong} />
-        <div className="container homeslide">
+        <div className="container homeslide searchpage">
           <Routes>
-            <Route path='/' exact element={ <Home /> } />
+            <Route path='/' exact element={ <Home songs={songs} setCurrentSong={setCurrentSong} /> } />
             <Route path='/About' element={ <About /> } />
             <Route path='/Search' element={ <Search /> } />
           </Routes>
@@ -51,3 +51,4 @@ function App() {
 }
 
 export default App;
+
