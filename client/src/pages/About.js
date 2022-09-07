@@ -10,7 +10,7 @@ function About() {
       <div className="aboutpara">
         <p className="para">  
           <h2>
-            Hi! Welcome to SongCloud 
+            Hi! Welcome to SongCloud, 
             Thanks for landing on it!  
           </h2>
           <br></br>

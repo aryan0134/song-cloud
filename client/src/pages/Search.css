@@ -1,7 +1,7 @@
 .search-container{
     position: absolute;
     height: 10%;
-    width: 84.5%;
+    width: 85%;
     /* border: 5px solid yellow; */
     background-color: #000000;
     display: flex;
@@ -45,8 +45,8 @@
 }
 .search-results{
     position: absolute;
-    height: 78%;
-    width: 84.5%;
+    height: 77%;
+    width: 85%;
     top: 10%;
     /* border: 5px solid rgb(238, 0, 255); */
     background-color: #2C3333;
