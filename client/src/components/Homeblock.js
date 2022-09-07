@@ -1,5 +1,5 @@
 exports.Homeblock = [
-    {
+    [{
         title: 'Under the Influence',
         image: "https://recordstoreday.com/Photo/418461611531:300",
         track: "https://media.hungama.com/c/4/04a/4c6/49356759/49356759_128.mp3?s3-JkF6M-FD5Pnk-iefUH9qygHIn3KOypyYrj8hNEID3ShbBKMftyQtp9rQY1WVKVs91QYMldeR_CMo6UQt3ZeoTf0SRUYveKRzIAHQGfkAgSqZ4AO4JE3XshZvlWUdkcf7jCQ",
@@ -33,8 +33,76 @@ exports.Homeblock = [
         track: "https://media.hungama.com/c/4/516/45f/38468407/38468407_128.mp3?c9aoXXkQx68yy8FTP28UhSfiHSMbls4iXWgkLj6raTiJsT2V0UjqjMm2m7bagViaNL4pvvP-DQ6a9lTqzmFtPWBpf6npC6if7PnW-WO7gltC_jM-UdP-WZu0BnJAjby07xTUWA",
         artist: "Drake",
         cName: 'bricks',
-    }
-
+    }],[{
+        title: '2002',
+        image: "https://ichef.bbci.co.uk/news/2048/cpsprodpb/F15D/production/_119498716_anne-marie_01-061f1.jpg",
+        track: "https://media.hungama.com/c/4/59d/675/35477186/35477186_128.mp3?K1N1G3pF5--4ieIjWmp_02LPVYWit7hQxEkQPw_KqZttktBCcr6px24VY4JbczuQ8fidMjMM-jDwilppq3qNfQ_ijboCT7oN8OeAVUDjIuf3--egxIkTI1SjhuKv0-YUCMPY-g",
+        artist: "Anne Marie",
+        cName: 'bricks'
+    },
+    {
+        title: 'Levitating',
+        image: "https://yt3.ggpht.com/ytc/AMLnZu_rkOQP282cWp5MJLwUAHdVgJ9QqmO8Y4xmJk92vQ=s900-c-k-c0x00ffffff-no-rj",
+        track: "//media.hungama.com/c/4/448/901/58418496/58418496_128.mp3?BfUNXqhKyt3GaFFHwbJC95Pp_O-enAeRgYbte9cOFuk9Hl_rNqD5_qna_rvdEmI3UukKk4lusR1cSXy4g29rWCZZirdp2JTeYUCyKqfEcDi7y0kLtyV3_IkDY_MQdDXWmIxVRA",
+        artist: "Dua Lipa",
+        cName: 'bricks'
+    },
+    {
+        title: 'Say my name',
+        image: "https://cdns-images.dzcdn.net/images/artist/c562b7e0b940d4f8ad430f14f4a484a3/500x500.jpg",
+        track: "https://media.hungama.com/c/4/715/6bc/41183120/41183120_128.mp3?rQVjueGcBZd2SjiUx4c3W1hvM6KWA3Ar0Yv0o9uI55e45gdJCMYbA23K1Vd6DBzgjti9MxnSv-V36-R0nForf7Y3dYuGMqRl1tz6om8uHduOiCjmCGA6ylGljfn0K-1ztmHAbQ",
+        artist: "Bebe Rexha",
+        cName: 'bricks'
+    },
+    {
+        title: 'Annaconda',
+        image: "https://gdb.voanews.com/12f448fd-c8ac-4961-bba2-6399d0fea173_w1080_h608_s.jpg",
+        track: "https://media.hungama.com/c/4/3ab/9bb/2594655/2594655_128.mp3?ZuQ48T0IThwPaddZp9LXZKYmSUAMgso85yABUuae0beRlcBorkNqYv4SxxDOGDpp-37gxWL5i9_zl7eT5mFLj75goKn1MopwkK4FI3M682I2eKxf6Eo6iFPD7i2Wcvu1CkM",
+        artist: "Nikki Minaj",
+        cName: 'bricks',
+    },
+    {
+        title: 'Work',
+        image: "https://www.cheatsheet.com/wp-content/uploads/2022/08/Rihanna-songs.jpg",
+        track: "https://media.hungama.com/c/4/67c/7b9/17343139/17343139_128.mp3?LAPTeEgSGdFCz7_-_5MWgVSujuWGXkcMs5NJ7HlKV6o25dcnCSdW7RLoWcjgcu1wdRkhJdYZhT7M6Yk9K08c53k79Hkn_2JgU8a--7cRrz2flYSA3ExWMlHn0uZQMYgRH0tkDQ",
+        artist: "Rihanna",
+        cName: 'bricks',
+    }],
+    [{
+        title: 'Fair Trade',
+        image: "https://media.newyorker.com/photos/613a6366654c2bef3a831f67/1:1/w_1200,h_1200,c_limit/Pearce-DrakeCertifiedLoverBoy-Social.jpg",
+        track: "https://media.hungama.com/c/4/d79/3e5/73394635/73394635_128.mp3?WpyARDjKfvL1J4P7thLv3vDKG3C7ZDWmScizZZ5IUMG70vjjX9U1-K1RYTGx02Igv_YN6qUoel70fn5psHWPOj0q8MUHoq4XhGOSeSmUQRqzWtLF3xPFuWEL9fYtDEZSrneHXQ",
+        artist: "Drake",
+        cName: 'bricks'
+    },
+    {
+        title: 'Blinding Lights',
+        image: "https://pittnews.com/wp-content/uploads/2020/03/C_The-Weeknd.png",
+        track: "https://media.hungama.com/c/4/635/fcf/52624066/52624066_128.mp3?X1FLxlce99sD0u9HKfuC8fEZextFHuotg3X2juCuAcxG22MZmxks2jk5D391IWNQtOFd4_26955dGMWPr-itL6K-8USp9I15blN4SNUP3HLtRLNY0XUB4mzH5GWmNbw32eJUMQ",
+        artist: "The Weeknd",
+        cName: 'bricks'
+    },
+    {
+        title: '5% Tint',
+        image: "https://a10.gaanacdn.com/images/albums/3/2203403/crop_480x480_2203403.jpg",
+        track: "https://media.hungama.com/c/4/5c7/c66/38468413/38468413_128.mp3?3oCnTyD2Lov2dB1B1-XAZxeU0eUB2KVKPC175ljHwx0L3JKpdXvG-lKkMJXa1yB_t9XMS5XAkwSUCKLe-Cb72LW5FRlLEivVGj4rRtfXmJegS250nGDKZMwu_iNt1fKszS07qA",
+        artist: "Travis Scott",
+        cName: 'bricks'
+    },
+    {
+        title: 'Toosie Slide',
+        image: "https://ratingsgamemusic.com/wp-content/uploads/2022/06/1655436530_7c26553a676dfb64978b26ae135bb863.jpeg",
+        track: "https://media.hungama.com/c/4/e81/389/52914938/52914938_128.mp3?tKD58wgZ0Zp5YdNbjJx8P7lrdnZfzbtXT4z5bJuXybiZaMsxhF6w-8SCf2wzSE_2uB8B6ii41zIK9S_gKXKx3qrWcN_0rtQ6ryt8Wl1zWOxto8K1Vc-wM1aYXxecR-bC5J9XAw",
+        artist: "Drake",
+        cName: 'bricks',
+    },
+    {
+        title: 'Loyalty',
+        image: "https://assets.fontsinuse.com/static/use-media-items/52/51196/full-1500x1500/58f577f9/C9H8-PWUIAAzbQ2-jpg-large-e.jpeg",
+        track: "https://media.hungama.com/c/4/453/ce2/42494307/42494307_128.mp3?_rZMCtrk7gGrkQhHERy4zeKT7iY_jXIrtv9gMqrNire5vQBNDk8oDRL-g9wbr8IortQbuDZ1k28alPnbHCqRWRL_j2PRYJZW9sF81Ixk_9H2ZWmIXGHhtWtfDGplaT6hg46UrA",
+        artist: "Kendrik Lamar",
+        cName: 'bricks',
+    }]
     
 
     

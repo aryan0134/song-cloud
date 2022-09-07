@@ -22,7 +22,6 @@
 .PlayerName{
     width: 60%;
     height: 75%;
-    /* border: 5px solid green; */
     position: absolute;
     top: 8px;
     left: 40%;
@@ -42,14 +41,12 @@
     position: absolute;
     height: 100%;
     width: 15%;
-    /* border: 5px solid yellow; */
 }
 .flex-2{
     position: absolute;
     height: 100%;
     width: 85%;
     left: 15%;
-    /* border: 5px solid yellow; */
 }
 .PlayerButton{
     font-size: inherit;

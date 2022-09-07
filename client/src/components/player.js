@@ -41,7 +41,6 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
         const skiptoNext = ()=>
         {
           const index = songs.findIndex(x=>x.title === currentSong.title);
-      
           if (index === songs.length-1)
           {
             setCurrentSong(songs[0])

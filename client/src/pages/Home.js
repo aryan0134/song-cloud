@@ -14,7 +14,7 @@ function Home() {
               <div key={uuid()} className={item.cName}>
                 <div key={uuid()} className={item.cName2}>
                   <h1 className='hometitle'>
-                    {
+                  {
                       item.title
                     }
                   </h1>
