@@ -4,25 +4,36 @@ import { Homeblock } from '../components/Homeblock';
 import './Home.css';
 import uuid from 'react-uuid';
 
-function Home() {
+function Home( { songs,setCurrentSong } ) {
 
   return (
     <>
         {
-          Homecontainer.map((item,index) => {
+          Homecontainer.map((item,index1) => {
             return(
               <div key={uuid()} className={item.cName}>
                 <div key={uuid()} className={item.cName2}>
                   <h1 className='hometitle'>
-                  {
+                    {
                       item.title
                     }
                   </h1>
                 </div>
                 <div key={uuid()} className={item.cName3}>
-                  {Homeblock.map((item, index) => {
+                  {Homeblock[index1].map((item,index) => {
                     return(
-                      <div key={index} className={item.cName} >
+                      <div key={uuid()} className={item.cName} on onClick={()=>{
+                        if (index1===2){
+                        setCurrentSong(songs[index+10]);
+                        }
+                        else if (index1===1){
+                          setCurrentSong(songs[index+5]);
+                        }
+                        else{
+                          setCurrentSong(songs[index]);
+
+                        }
+                      }}>
                         <img key={uuid()} src={item.image} />
                       </div>
                     )
