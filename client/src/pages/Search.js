@@ -36,7 +36,7 @@ const logout = () => {
 }
   const searchArtists = async (e) => {
     e.preventDefault()
-    const {data} = await axios.get("https://api.spotify.com/v1/search", {
+    const {data} = await axios.get("https://api.spotify.com/v1/search?type=album&include_external=audio", {
       headers: {
         Authorization: `Bearer ${token}`
       },
@@ -47,7 +47,7 @@ const logout = () => {
     })
 
     console.log(data)
-    setArtists(data.artists.items)
+    setArtists(data.albums.items)
 }
 const renderArtists = () => {
   return artists.map(artist => (

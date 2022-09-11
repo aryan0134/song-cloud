@@ -40,7 +40,7 @@ function App() {
         <Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} currentSong={currentSong} setCurrentSong={setCurrentSong} />
         <div className="container homeslide searchpage">
           <Routes>
-            <Route path='/' exact element={ <Home songs={songs} setCurrentSong={setCurrentSong} /> } />
+            <Route path='/' exact element={ <Home songs={songs} setCurrentSong={setCurrentSong} isplaying={isplaying} setisplaying={setisplaying} /> } />
             <Route path='/About' element={ <About /> } />
             <Route path='/Search' element={ <Search /> } />
           </Routes>
