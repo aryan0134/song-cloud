@@ -4,7 +4,13 @@ import { Homeblock } from '../components/Homeblock';
 import './Home.css';
 import uuid from 'react-uuid';
 
-function Home( { songs,setCurrentSong } ) {
+function Home( { songs,setCurrentSong,setisplaying,isplaying } ) {
+
+  const PlayPause = ()=>
+        {
+          setisplaying(!isplaying);
+      
+        }
 
   return (
     <>
@@ -24,14 +30,16 @@ function Home( { songs,setCurrentSong } ) {
                     return(
                       <div key={uuid()} className={item.cName} on onClick={()=>{
                         if (index1===2){
-                        setCurrentSong(songs[index+10]);
+                          setCurrentSong(songs[index+10]);
+                          PlayPause()
                         }
                         else if (index1===1){
                           setCurrentSong(songs[index+5]);
+                          PlayPause()
                         }
                         else{
                           setCurrentSong(songs[index]);
-
+                          PlayPause()
                         }
                       }}>
                         <img key={uuid()} src={item.image} />
