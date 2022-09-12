@@ -24,6 +24,9 @@ function About() {
         </p>
       </div>
       <div className="developer1">
+        <div className='heading'>
+          <h1>Developers</h1>
+        </div>
         <div className='image1'>
         
         </div>

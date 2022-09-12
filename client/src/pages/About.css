@@ -40,6 +40,18 @@
     top: 55%;
     left: 17%;
 }
+.heading{
+    width: 33%;
+    height: 25%;
+    position: absolute;
+    left: 35%;
+    top: -30%;
+
+}
+.heading h1{
+    text-align: center;
+    text-decoration: underline;
+}
 .image1{
     position: absolute;
     width: 15%;
