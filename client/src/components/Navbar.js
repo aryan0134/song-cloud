@@ -4,9 +4,18 @@ import { SidebarData } from './SidebarData';
 import './Navbar.css'; 
 
 function Navbar() {
+    
   return (
     <>
         <nav className='sidebar'>
+            <div className="app-logo">
+                <div className='image-logo'>
+                    
+                </div>
+                <div className="app-logo-text">
+                    <h1>Song Cloud</h1>
+                </div>
+            </div>
             <ul className='nav-menu-items'>
                 {SidebarData.map((item, index) => {
                      return(
@@ -20,6 +29,9 @@ function Navbar() {
                 })}
             </ul>
             <div className='sidebar-divider'>
+            </div>
+            <div className="my-songs">
+
             </div>
         </nav>
     </>
