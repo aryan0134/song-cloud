@@ -12,4 +12,44 @@
     flex-direction: column;
     
 }
+.logout-btn{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 6%;
+    width: 7%;
+    font-size: 1.5vw;
+    background-color: black;
+    z-index: 1;
+    color: azure;
+}
+.SignIn{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    margin: auto;
+    height: 6%;
+    width: 7%;
+    font-size: 1.5vw;
+    background-color: black;
+    z-index: 1;
+    color: azure;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SignIn a{
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: azure;
+}
+.SignIn a:hover{
+    color: black;
+    transition: ease-in-out 0.5s;
+}
+.SignIn:hover{
+    background-color: azure;
+    color: black;
+    transition: ease-in-out 0.5s;
+}
 

@@ -7,15 +7,13 @@ body{
     height: 100vh;
     width: 15%;
     display:  flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
     position : fixed;
 }
 .nav-text{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px;
     list-style: none;
     height: 30px;
 }
@@ -34,10 +32,11 @@ body{
 }
 .nav-menu-items{
     width: 100%;
-    padding-inline-start: 0px;
-    margin-top: 15%;
+    height: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 span{
     margin-left: 16px;
@@ -46,8 +45,36 @@ span{
     background-color: white;
     height: 1px;
     width: 90%;
-    position: absolute;
-    left: 4%;
-    top: 35%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+.app-logo{
+    height: 10%;
+    width: 100%;
+    display: flex;
+
+}
+.my-songs{
+    height:30%;
+    border: 5px solid green;
+}
+.image-logo{
+    height: 100%;
+    width: 30%;
+}
+.app-logo-text{
+    height: 100%;
+    width: 70%;
+}
+.app-logo-text h1{
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+.image-logo{
+    background-image: url('applogo.png');
+    background-size: 100% 100%;
 }
  

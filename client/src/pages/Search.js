@@ -3,10 +3,10 @@ import './Search.css';
 import axios from 'axios';
 
 function Search() {
-  const CLIENT_ID = "c8cdda9b5f474d3f837a090b38bdc62f"
-  const REDIRECT_URI = "http://localhost:3000/Search"
-  const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
-  const RESPONSE_TYPE = "token"
+  // const CLIENT_ID = "c8cdda9b5f474d3f837a090b38bdc62f"
+  // const REDIRECT_URI = "http://localhost:3000/Search"
+  // const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
+  // const RESPONSE_TYPE = "token"
 
   const [token, setToken] = useState("")
   const [searchKey, setSearchKey] = useState("")
@@ -30,10 +30,10 @@ function Search() {
 
 }, [])
 
-const logout = () => {
-    setToken("")
-    window.localStorage.removeItem("token")
-}
+// const logout = () => {
+//     setToken("")
+//     window.localStorage.removeItem("token")
+// }
   const searchArtists = async (e) => {
     e.preventDefault()
     const {data} = await axios.get("https://api.spotify.com/v1/search?type=album&include_external=audio", {
@@ -60,10 +60,10 @@ const renderArtists = () => {
   return (
     <>
       <div className="search-container">
-        {!token ?
+        {/* {!token ?
                       <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}  >Login
                           to Song Cloud</a>
-                      : <button onClick={logout} className="logout-btn">Logout</button>}
+                      : <button onClick={logout} className="logout-btn">Logout</button>} */}
 
                   {token ?
                       <form onSubmit={searchArtists} className="searchElement">
