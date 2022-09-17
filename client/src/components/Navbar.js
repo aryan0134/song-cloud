@@ -7,6 +7,9 @@ function Navbar() {
   return (
     <>
         <nav className='sidebar'>
+            <label className='navbar-label'>
+                <img src='logo.png'></img>
+            </label>
             <ul className='nav-menu-items'>
                 {SidebarData.map((item, index) => {
                      return(

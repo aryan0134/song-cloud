@@ -11,6 +11,10 @@ body{
     align-items: flex-start;
     position : fixed;
 }
+.navbar-label img{
+    height: 60px;
+    width: 60px;
+}
 .nav-text{
     display: flex;
     justify-content: flex-start;
