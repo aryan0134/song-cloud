@@ -46,7 +46,7 @@ span{
     height: 1px;
     width: 90%;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     margin-left: 5%;
 }
 .app-logo{
@@ -57,7 +57,12 @@ span{
 }
 .my-songs{
     height:30%;
-    border: 5px solid green;
+    width: 90%;
+    margin-left: 5%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .image-logo{
     height: 100%;
@@ -76,5 +81,31 @@ span{
 .image-logo{
     background-image: url('applogo.png');
     background-size: 100% 100%;
+}
+.flex-11{
+    display: flex;
+    flex-direction: row;
+}
+.PlayerArtist1{
+    width: 40%;
+    height: 90%;
+}
+.PlayerArtist1 img{
+height: 100%;
+width: 100%;
+}
+.PlayerName1{
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.PlayerName1 h1{
+    font-size: 0.9vw;
+    text-align: center;
+    font-family:  'Sora', sans-serif;
+    color: aliceblue;
 }
  
