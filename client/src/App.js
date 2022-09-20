@@ -14,7 +14,7 @@ function App() {
   const REDIRECT_URI = "http://localhost:3000"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
-  const SCOPE = "user-top-read"
+  const SCOPE = "streaming%20user-top-read"
 
   const [token, setToken] = useState("")
 
