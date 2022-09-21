@@ -33,18 +33,18 @@ function Navbar({currentSong, count, setCount}){
         setToken(token)
     
     }, [])
-
-    const myTop = async () => {
-        const {data} = await axios.get("https://api.spotify.com/v1/me/top/tracks", {
-          headers: {
-            Authorization: `Bearer ${token}`
-          }
-            
-        })
-    
-        console.log(data)
-        setTop(data.items)
-    }
+    useEffect(()=>{
+        const myTop = async () => {
+            const {data} = await axios.get("https://api.spotify.com/v1/me/top/tracks", {
+            headers: {
+                Authorization: `Bearer ${token}`
+            }     
+            })
+            console.log(data)
+            setTop(data.items)
+        }
+        myTop()
+    },[token])
     const renderTop= () => {
         // myTop()
         return top.map((item) => (
@@ -81,7 +81,7 @@ function Navbar({currentSong, count, setCount}){
             </ul>
             <div className='sidebar-divider'>
             </div>
-            <div className="my-songs" onClick={myTop}>
+            <div className="my-songs" >
                 {renderTop()}
             </div>
             {count==1 ? <div className='expand-player'>
