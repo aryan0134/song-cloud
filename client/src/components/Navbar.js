@@ -4,10 +4,17 @@ import { SidebarData } from './SidebarData';
 import './Navbar.css';
 import axios from 'axios';
 import uuid from 'react-uuid';
+import * as FaIcons from 'react-icons/fa';
 
-function Navbar() {
+
+function Navbar({currentSong, count, setCount}){
     const [token, setToken] = useState("")
     const [top, setTop] = useState([])
+    // const [count, setCount]= useState(1)
+
+    function decrease(){
+        setCount(0)
+    }
 
     useEffect(() => {
         const hash = window.location.hash
@@ -39,6 +46,7 @@ function Navbar() {
         setTop(data.items)
     }
     const renderTop= () => {
+        // myTop()
         return top.map((item) => (
             <div key={uuid()} className='flex-11'>
                 <div key={uuid()} className='PlayerArtist1'>
@@ -50,12 +58,7 @@ function Navbar() {
     }  
   return (
     <>
-        <nav className='sidebar'>
-<<<<<<< HEAD
-            <label className='navbar-label'>
-                <img src='logo.png'></img>
-            </label>
-=======
+        {count==1 ? <nav className='sidebar zindex'>
             <div className="app-logo">
                 <div className='image-logo'>
                     
@@ -64,7 +67,6 @@ function Navbar() {
                     <h1>Song Cloud</h1>
                 </div>
             </div>
->>>>>>> d6483d62fa4bd404d754719d728a51587201bef2
             <ul className='nav-menu-items'>
                 {SidebarData.map((item, index) => {
                      return(
@@ -82,7 +84,66 @@ function Navbar() {
             <div className="my-songs" onClick={myTop}>
                 {renderTop()}
             </div>
-        </nav>
+            {count==1 ? <div className='expand-player'>
+                <div className='expand-pic'>
+                    <div className='expand-icon' onClick={decrease} > 
+                        <FaIcons.FaChevronCircleDown />
+                    </div>
+                    <img src={currentSong.image} />
+                </div>
+                <div className='expand-name'>
+                    <h1>
+                        {currentSong.title}
+                    </h1>
+                    <h3>
+                        {currentSong.artist}
+                    </h3>
+                </div>
+            </div> : ""}
+        </nav> 
+        : <nav className='sidebar'>
+        <div className="app-logo">
+            <div className='image-logo'>
+                
+            </div>
+            <div className="app-logo-text">
+                <h1>Song Cloud</h1>
+            </div>
+        </div>
+        <ul className='nav-menu-items'>
+            {SidebarData.map((item, index) => {
+                 return(
+                    <li key={index} className={item.cName}>
+                        <Link to={item.path}>
+                            {item.icon}
+                            <span>{item.title}</span>
+                        </Link>
+                    </li>
+                 );
+            })}
+        </ul>
+        <div className='sidebar-divider'>
+        </div>
+        <div className="my-songs" onClick={myTop}>
+            {renderTop()}
+        </div>
+        {count==1 ? <div className='expand-player'>
+            <div className='expand-pic'>
+                <div className='expand-icon' onClick={decrease} > 
+                    <FaIcons.FaChevronCircleDown />
+                </div>
+                <img src={currentSong.image} />
+            </div>
+            <div className='expand-name'>
+                <h1>
+                    {currentSong.title}
+                </h1>
+                <h3>
+                    {currentSong.artist}
+                </h3>
+            </div>
+        </div> : ""}
+    </nav>}
     </>
   )
 }

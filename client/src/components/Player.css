@@ -8,7 +8,7 @@
     bottom: 0px;  
 }
 .PlayerArtist{
-        width: 30%;
+        width: 32%;
         height: 75%;
         background-color: paleturquoise;
         position: absolute;
@@ -18,6 +18,20 @@
 .PlayerArtist img{
     height: 100%;
     width: 100%;
+}
+.Upbotton{
+    /* border: 2px solid greenyellow; */
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 20px;
+}
+.iconbtn{
+    font-size: 1.3vw;
+    color: white;
 }
 .PlayerName{
     width: 60%;
@@ -65,7 +79,13 @@
 }
 .btn_action:hover{
     color: white;
-}       
+}  
+/* .up_icon{
+    position: absolute;
+    display: flex;
+    padding-top: 10px;
+    top: 10%;
+}      */
 .pp{
     font-size: 3rem;       
 }

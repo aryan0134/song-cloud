@@ -9,7 +9,7 @@ import Player from './components/Player';
 import { songsdata } from './components/Audio';
 
 function App() {
-
+  const [count, setCount]= useState(0)
   const CLIENT_ID = "c8cdda9b5f474d3f837a090b38bdc62f"
   const REDIRECT_URI = "http://localhost:3000"
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
@@ -73,9 +73,9 @@ const logout = () => {
                         <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${SCOPE}`}  >Login</a></div> 
                         : <button onClick={logout} className="logout-btn">Logout</button>}
         
-        <Navbar />
+        <Navbar currentSong={currentSong} count={count} setCount={setCount} />
         <audio src={currentSong.track} ref={audioElem} onTimeUpdate={onPlaying} />
-        <Player songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} currentSong={currentSong} setCurrentSong={setCurrentSong} />
+        <Player count={count} setCount={setCount} songs={songs} setSongs={setSongs} isplaying={isplaying} setisplaying={setisplaying} audioElem={audioElem} currentSong={currentSong} setCurrentSong={setCurrentSong} />
         <div className="container homeslide searchpage">
           <Routes>
             <Route path='/' exact element={ <Home songs={songs} setCurrentSong={setCurrentSong} isplaying={isplaying} setisplaying={setisplaying} /> } />

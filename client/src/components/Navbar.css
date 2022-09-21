@@ -9,6 +9,10 @@ body{
     display:  flex;
     flex-direction: column;
     position : fixed;
+    
+}
+.zindex{
+    z-index: 9;
 }
 .navbar-label img{
     height: 60px;
@@ -111,5 +115,38 @@ width: 100%;
     text-align: center;
     font-family:  'Sora', sans-serif;
     color: aliceblue;
+}
+.expand-player{
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    
+}
+.expand-pic{
+    height: 66%;
+
+}
+.expand-name{
+    height: 34%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.expand-name h1{
+    font-size: 1.5vw;
+}
+.expand-pic img{
+    height: 100%;
+    width: 100%;
+}
+.expand-icon{
+    position: absolute;
+    color: white;
+    right: 0%;
+    margin: auto;
 }
  

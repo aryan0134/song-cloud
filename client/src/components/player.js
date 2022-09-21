@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
 import './Player.css';
 import * as BsIcons from 'react-icons/bs';
+import * as FaIcons from 'react-icons/fa';
 
-function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong, songs}){
+function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong, songs, count, setCount}){
         const clickRef = useRef();
       
         const PlayPause = ()=>
@@ -11,6 +12,9 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
       
         }
       
+        function increase(){
+          setCount(1)
+        }
       
         const checkWidth = (e)=>
         {
@@ -58,6 +62,9 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
             <div className='flex-1'>
                 <div className='PlayerArtist'>
                   <img src={currentSong.image} />
+                  <div className='Upbotton' onClick={increase}>
+                    <FaIcons.FaChevronCircleUp className='iconbtn'/>
+                  </div>
                 </div>
                 <div className='PlayerName'><h1>{currentSong.title}</h1><h1>{currentSong.artist}</h1></div>
             </div>
