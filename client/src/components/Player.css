@@ -21,8 +21,8 @@
 }
 .Upbotton{
     /* border: 2px solid greenyellow; */
-    width: 30%;
-    height: 30%;
+    width: 20%;
+    height: 20%;
     position: absolute;
     top: 0;
     right: 0;
@@ -30,7 +30,6 @@
     font-weight: 20px;
 }
 .iconbtn{
-    font-size: 1.3vw;
     color: white;
 }
 .PlayerName{

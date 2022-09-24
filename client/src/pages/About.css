@@ -3,100 +3,140 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    background-color:  #CCCCFF;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#bdc3c7, #2c3e50);
 }
 .aboutlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 25%;
     height: 13%;
-    position: absolute;
-    left: 45%;
-    margin: auto;
-    top: 3%;
-    font-size: xx-large;
-    background-color: #9370DB;
+    font-size: 3vw;
+    background-color: #638692;
 }
 .title{
     color: beige;
-    position: absolute;
-    left: 20%;
-    top: 15%;
 }
 .aboutpara{
+    display: flex;
+    justify-content: center;
     width: 80%;
     height: 30%;
-    position: absolute;
-    top: 20%;
-    left: 17%;
+    align-items: center;
 }
 .para{
     font-style: italic;
-    font-size: large;
+    font-size: 1.5vw;
 
 }
 .developer1{
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 80%;
-    height: 32%;
-    top: 55%;
-    left: 17%;
+    height: 47%;
+}
+.flex1{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex2{
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
 }
 .heading{
     width: 33%;
     height: 25%;
-    position: absolute;
-    left: 35%;
-    top: -30%;
+
 
 }
 .heading h1{
     text-align: center;
     text-decoration: underline;
+    font-size: 3vw;
 }
 .image1{
-    position: absolute;
-    width: 15%;
     height: 80%;
-    left: 5%;
-    top: 10%;
     background-image: url("pic3.JPG");
-    background-size: cover;
+    background-size: 100% 100%;
+    
 
 }
+/* .image1:hover{
+    height: 180%;
+    width: 160%;
+    bottom: 50%;
+    margin: auto;
+} */
 .image2{
-    position: absolute;
-    width: 15%;
     height: 80%;
-    left: 30%;
-    top: 10%;
     background-image: url("pic1.jpeg");
-    background-size: cover;
-    background-position-x: 80%;
-    background-position-y: 20%;
-
+    background-size: 100% 165%;
+    background-position-y: 30%;
+    
 }
+/* .image2:hover{
+    height: 100%;
+    width: 20%;
+    bottom: 50%;
+    margin: auto;
+} */
 .image3{
-    position: absolute;
-    width: 15%;
     height: 80%;
-    left: 55%;
-    top: 10%;
     background-image: url("pic2.png");
-    background-size: cover;
-    background-position-x: 30%;
+    background-size: 140% 100%;
+    background-position-x: 45%;
 
 }
+/* .image3:hover{
+    height: 100%;
+    width: 20%;
+    bottom: 50%;
+    margin: auto;
+} */
 .image4{
-    position: absolute;
-    width: 15%;
     height: 80%;
-    left: 80%;
-    top: 10%;
     background-image: url("pic4.jpeg");
-    background-size: cover;
-    background-position-x: -45%;
+    background-size: 120% 100%;
 
 
 }
+/* .image4:hover{
+    height: 100%;
+    width: 20%;
+    bottom: 50%;
+    margin: auto;
+} */
+.Name1{
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+.Name1 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 1.5vw;
+}
+.kutchbhi{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 20%;
+}
+.kutchbhi:hover{
+    height: 110%;
+    width: 25%;
+}
+
 
 
 

@@ -24,21 +24,41 @@ function About() {
         </p>
       </div>
       <div className="developer1">
-        <div className='heading'>
-          <h1>Developers</h1>
+        <div className="flex1">
+          <div className='heading'>
+            <h1>Developers</h1>
+          </div>
         </div>
-        <div className='image1'>
-        
-        </div>
-        <div className='image2'>
 
+        <div className="flex2">
+          <div className='kutchbhi'>
+            <div className='image1'></div>
+            <div className='Name1'> <h1> Bhavik </h1> </div>
+          </div>
+          <div className='kutchbhi'>
+            <div className='image2'></div>
+            <div className='Name1'> <h1> Ayusha </h1> </div>
+          </div>
+          <div className='kutchbhi'>
+            <div className='image3'></div>
+            <div className='Name1'> <h1> Aryan </h1> </div>
+          </div>
+          <div className='kutchbhi'>
+            <div className='image4'></div>
+            <div className='Name1'> <h1> Yash </h1> </div>
+          </div>
+        </div>
+        {/* <div className='image2'>
+          <div className='Name1'> <h1> Ayusha </h1> </div>
         </div>
         <div className='image3'>
-
+          <div className='Name1'> <h1> Aryan </h1> </div>
         </div>
         <div className='image4'>
+          <div className='Name1'> <h1> Yash </h1> </div>
+        </div> */}
 
-        </div>
+
       </div>
     </div>
   )
