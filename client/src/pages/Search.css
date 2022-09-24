@@ -53,8 +53,19 @@
     overflow-y: scroll;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
+/* .first{
+    height: 40%;
+    width: 100%;
+    border: 5px solid red;
+    display: flex;
+    flex-direction: column;
+}
+.last{
+    height: 60%;
+    width: 100%;
+    border: 5px solid yellow;
+} */
 .api-div{
     height: 55%;
     width: 25%;

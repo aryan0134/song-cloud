@@ -57,6 +57,16 @@ const renderArtists = () => {
       </div>
   ))
 }
+// const artistResult = () => {
+//   return(
+//     <>
+//       <div className="artists">
+//         <div className="flex1"><h1>Artists</h1></div>
+//         <div className="flex2">{renderArtists()}</div>
+//       </div>
+//     </>
+//   );
+// }
   return (
     <>
       <div className="search-container">
