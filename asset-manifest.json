@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/song-cloud/static/css/main.bb9e3769.css",
+    "main.js": "/song-cloud/static/js/main.f2fbce5a.js",
+    "static/media/pic3.JPG": "/song-cloud/static/media/pic3.7dcade594335de41d422.JPG",
+    "static/media/pic2.png": "/song-cloud/static/media/pic2.76f3934c023f875529e2.png",
+    "static/media/pic4.jpeg": "/song-cloud/static/media/pic4.20a45f1e4eb5c0954154.jpeg",
+    "static/media/pic1.jpeg": "/song-cloud/static/media/pic1.b145df855343381b893d.jpeg",
+    "static/media/applogo.png": "/song-cloud/static/media/applogo.a9bf830fd7f4c21a2e91.png",
+    "index.html": "/song-cloud/index.html",
+    "main.bb9e3769.css.map": "/song-cloud/static/css/main.bb9e3769.css.map",
+    "main.f2fbce5a.js.map": "/song-cloud/static/js/main.f2fbce5a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb9e3769.css",
+    "static/js/main.f2fbce5a.js"
+  ]
+}
