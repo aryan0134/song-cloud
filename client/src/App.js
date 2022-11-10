@@ -43,6 +43,7 @@ const logout = () => {
 
   const [songs, setSongs] = useState(songsdata);
   const [isplaying, setisplaying] = useState(false);
+  // const [plays, setPlays] = useState(false);
   const [currentSong, setCurrentSong] = useState(songsdata[0]);
   
   const audioElem = useRef();
@@ -55,6 +56,17 @@ const logout = () => {
       audioElem.current.pause();
     }
   }, [isplaying])
+
+  // useEffect(() => {
+  //   if (plays) {
+  //     audioElem.current.currentTime= 0;
+  //     audioElem.current.play();
+  //   }
+  //   // else {
+  //   //   audioElem.current.pause();
+  //   // }
+  // }, [plays])
+
 
   const onPlaying = () => {
     const duration = audioElem.current.duration;

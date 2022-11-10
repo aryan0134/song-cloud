@@ -3,7 +3,7 @@ import './Player.css';
 import * as BsIcons from 'react-icons/bs';
 import * as FaIcons from 'react-icons/fa';
 
-function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong, songs, count, setCount}){
+function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong, songs, setCount}){
         const clickRef = useRef();
       
         const PlayPause = ()=>
@@ -11,6 +11,12 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
           setisplaying(!isplaying);
       
         }
+
+        // const Play = ()=>
+        // {
+        //   setPlays(true);
+      
+        // }
       
         function increase(){
           setCount(1)
@@ -61,7 +67,7 @@ function Player({audioElem, isplaying, setisplaying, currentSong, setCurrentSong
         <div className='Player-container'>
             <div className='flex-1'>
                 <div className='PlayerArtist'>
-                  <img src={currentSong.image} />
+                  <img src={currentSong.image} alt="Network Error"/>
                   <div className='Upbotton' onClick={increase}>
                     <FaIcons.FaChevronCircleUp className='iconbtn'/>
                   </div>

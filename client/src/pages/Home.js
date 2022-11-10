@@ -42,7 +42,7 @@ function Home( { songs,setCurrentSong,setisplaying,isplaying } ) {
                           PlayPause()
                         }
                       }}>
-                        <img key={uuid()} src={item.image} />
+                        <img key={uuid()} src={item.image} alt="Network Error" />
                       </div>
                     )
                   })}
